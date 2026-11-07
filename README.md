@@ -214,4 +214,4 @@ This project is licensed under the [GNU General Public License v3.0](LICENSE).
 - [LosslessSwitcher](https://github.com/vincentneo/LosslessSwitcher) by Vincent Neo, GPL-3.0: the source of the exclusive output engine and the player card.
 - [BlackHole](https://github.com/ExistentialAudio/BlackHole) by Existential Audio, GPL-3.0: the source of the Bridge virtual device. Its original license is in `Driver/LICENSE-BlackHole`.
 
-Powered by 三彈瓦斯 and Claude.
+Powered by Talon and Claude.

@@ -214,4 +214,4 @@ docs/           說明文件圖片與開發紀錄
 - [LosslessSwitcher](https://github.com/vincentneo/LosslessSwitcher)，作者 Vincent Neo，GPL-3.0：獨佔輸出引擎與播放卡片的來源。
 - [BlackHole](https://github.com/ExistentialAudio/BlackHole)，作者 Existential Audio，GPL-3.0：Bridge 虛擬裝置的原始碼，原授權見 `Driver/LICENSE-BlackHole`。
 
-Powered by 三彈瓦斯 and Claude.
+Powered by Talon and Claude.

@@ -22,8 +22,8 @@ struct BrandBanner: View {
                 .overlay(alignment: .bottomTrailing) {
                     GeometryReader { geometry in
                         let width = geometry.size.width
-                        Text(verbatim: "Powered by 三彈瓦斯 and Claude")
-                            .font(.system(size: max(8, width * 0.021), weight: .medium, design: .serif))
+                        Text(verbatim: "Powered by Talon and Claude")
+                            .font(.system(size: max(7, width * 0.015), weight: .medium, design: .serif))
                             .tracking(width * 0.0012)
                             .foregroundStyle(Self.ink.opacity(0.85))
                             .padding(.trailing, width * 0.035)
@@ -32,7 +32,7 @@ struct BrandBanner: View {
                     }
                 }
                 .accessibilityElement(children: .ignore)
-                .accessibilityLabel("LosslessCompanion 標誌，Powered by 三彈瓦斯 and Claude")
+                .accessibilityLabel("LosslessCompanion 標誌，Powered by Talon and Claude")
         }
     }
 }

@@ -1234,12 +1234,12 @@
         }
       }
     },
-    "LosslessCompanion 標誌，Powered by 三彈瓦斯 and Claude": {
+    "LosslessCompanion 標誌，Powered by Talon and Claude": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "LosslessCompanion logo, Powered by 三彈瓦斯 and Claude"
+            "value": "LosslessCompanion logo, Powered by Talon and Claude"
           }
         }
       }
@@ -1362,16 +1362,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "The macOS volume slider controls the DAC's own volume. Below 100%, the DAC may scale the digital signal. When this is on, the volume goes to maximum during local and Apple Music playback and is restored when playback stops. Use the slider in the playback bar to adjust streaming loudness. If the DAC drives headphones or active speakers directly, the sound can suddenly get louder, so check your downstream volume first."
-          }
-        }
-      }
-    },
-    "powered by Claude and 三彈瓦斯": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "powered by Claude and 三彈瓦斯"
           }
         }
       }
