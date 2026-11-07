@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>LosslessCompanion 需要讀取 Apple Music 的播放列表，並在你選擇串流時控制播放。</string>
+	<key>NSAudioCaptureUsageDescription</key>
+	<string>用來檢查 Apple Music 的輸出有沒有被改動，只計算，不儲存音訊。</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Hog 模式要從 LosslessCompanion Bridge 虛擬裝置讀取 Apple Music 的輸出，原樣轉送到 DAC。不會使用麥克風，也不儲存音訊。</string>
+</dict>
+</plist>

@@ -1,0 +1,5521 @@
+{
+  "sourceLanguage": "zh-Hant",
+  "strings": {
+    "": {
+      "shouldTranslate": false
+    },
+    " · 中斷 %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · %lld dropouts"
+          }
+        }
+      }
+    },
+    " · 切換 %lld ms": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · switch %lld ms"
+          }
+        }
+      }
+    },
+    "%@ %lld 首，共 %lld 首": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: %2$lld of %3$lld tracks"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ %2$lld 首，共 %3$lld 首"
+          }
+        }
+      }
+    },
+    "%@ / %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ / %2$@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ / %2$@"
+          }
+        }
+      }
+    },
+    "%@ — %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ — %2$@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ — %2$@"
+          }
+        }
+      }
+    },
+    "%@ 是有損格式，不列入 Bit-Perfect 播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ is a lossy format and can't play Bit-Perfect"
+          }
+        }
+      }
+    },
+    "%@ 的獨佔設定": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exclusive Settings for %@"
+          }
+        }
+      }
+    },
+    "%@ 秒": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sec"
+          }
+        }
+      }
+    },
+    "%@ 秒（預設）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sec (Default)"
+          }
+        }
+      }
+    },
+    "%@（%@）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ (%2$@)"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@（%2$@）"
+          }
+        }
+      }
+    },
+    "%@，%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, %2$@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@，%2$@"
+          }
+        }
+      }
+    },
+    "%@，%@，%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, %2$@, %3$@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@，%2$@，%3$@"
+          }
+        }
+      }
+    },
+    "%@，%lld 首，%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@, %#@arg2@, %3$@"
+          },
+          "substitutions": {
+            "arg2": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg track"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg tracks"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@，%2$lld 首，%3$@"
+          }
+        }
+      }
+    },
+    "%@，DAC 可能會縮放訊號": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, the DAC may scale the signal"
+          }
+        }
+      }
+    },
+    "%@，有損": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, lossy"
+          }
+        }
+      }
+    },
+    "%@，與歌曲不同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, differs from track"
+          }
+        }
+      }
+    },
+    "%lld / %lld 首有 Apple Music 資料": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld of %2$lld tracks have Apple Music data"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld / %2$lld 首有 Apple Music 資料"
+          }
+        }
+      }
+    },
+    "%lld 分鐘": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld min"
+          }
+        }
+      }
+    },
+    "%lld 小時 %lld 分鐘": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld hr %2$lld min"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld 小時 %2$lld 分鐘"
+          }
+        }
+      }
+    },
+    "%lld 張": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg album"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg albums"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld 張專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg album"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg albums"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld 張專輯，%lld 首歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@, %#@arg2@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg album"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg albums"
+                    }
+                  }
+                }
+              }
+            },
+            "arg2": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg song"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg songs"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld 張專輯，%2$lld 首歌曲"
+          }
+        }
+      }
+    },
+    "%lld 張專輯，%lld 首歌曲，共 %@。音檔不壓縮也不轉檔，封面圖一起打包，並附上播放次數清單。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@, %#@arg2@, %3$@ total. Audio files are not compressed or converted. Cover art and a play count list are included."
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg album"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg albums"
+                    }
+                  }
+                }
+              }
+            },
+            "arg2": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg song"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg songs"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld 張專輯，%2$lld 首歌曲，共 %3$@。音檔不壓縮也不轉檔，封面圖一起打包，並附上播放次數清單。"
+          }
+        }
+      }
+    },
+    "%lld 次": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld"
+          }
+        }
+      }
+    },
+    "%lld 秒被改動": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld s changed"
+          }
+        }
+      }
+    },
+    "%lld 首": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg track"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg tracks"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld 首、%lld 張專輯在 Apple Music 資料庫裡找不到相同的歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@ and %#@arg2@ have no matching song in the Apple Music library"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg track"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg tracks"
+                    }
+                  }
+                }
+              }
+            },
+            "arg2": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg album"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg albums"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld 首、%2$lld 張專輯在 Apple Music 資料庫裡找不到相同的歌曲"
+          }
+        }
+      }
+    },
+    "%lld 首可播放，%lld 個檔案已隱藏": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@, %#@arg2@ hidden"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg playable track"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg playable tracks"
+                    }
+                  }
+                }
+              }
+            },
+            "arg2": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg file"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg files"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld 首可播放，%2$lld 個檔案已隱藏"
+          }
+        }
+      }
+    },
+    "%lld 首是重複檔案": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg track is a duplicate file"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg tracks are duplicate files"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld 首有相近的候選": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg track has close candidates"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg tracks have close candidates"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld 首未匹配": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld unmatched"
+          }
+        }
+      }
+    },
+    "%lld 首本地音檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg local track"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg local tracks"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld 首歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg song"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg songs"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld 首歌曲，%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@, %2$@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg song"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg songs"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld 首歌曲，%2$@"
+          }
+        }
+      }
+    },
+    "%lld 首歌曲，%@，%@ / %lld-bit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@, %2$@, %3$@ / %4$lld-bit"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg song"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg songs"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld 首歌曲，%2$@，%3$@ / %4$lld-bit"
+          }
+        }
+      }
+    },
+    "%lld%%": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%%"
+          }
+        }
+      }
+    },
+    "%lld-bit，低於歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld-bit, below track"
+          }
+        }
+      }
+    },
+    "01 歌名": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "01 Title"
+          }
+        }
+      }
+    },
+    "01 歌手 - 歌名": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "01 Artist - Title"
+          }
+        }
+      }
+    },
+    "1-01 歌名": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1-01 Title"
+          }
+        }
+      }
+    },
+    "32 位元浮點，由 HAL 轉為硬體格式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "32-bit float, converted to the hardware format by the HAL"
+          }
+        }
+      }
+    },
+    "Apple Music": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music"
+          }
+        }
+      }
+    },
+    "Apple Music 串流": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music Streaming"
+          }
+        }
+      }
+    },
+    "Apple Music 回報錯誤：%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music reported an error: %@"
+          }
+        }
+      }
+    },
+    "Apple Music 已停止播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music stopped playing"
+          }
+        }
+      }
+    },
+    "Apple Music 播放列表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music Playlist"
+          }
+        }
+      }
+    },
+    "Apple Music 播放列表中的歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Songs in Apple Music Playlists"
+          }
+        }
+      }
+    },
+    "Apple Music 最近加入": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recently Added to Apple Music"
+          }
+        }
+      }
+    },
+    "Apple Music 正在播放其他歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music is playing another song"
+          }
+        }
+      }
+    },
+    "Apple Music 沒有聲音": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music Has No Sound"
+          }
+        }
+      }
+    },
+    "Apple Music 沒有開啟。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music is not open."
+          }
+        }
+      }
+    },
+    "Apple Music 的輸出卡住了，已重新開啟，請再播放一次": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music's output stalled. It was reopened, please play again."
+          }
+        }
+      }
+    },
+    "Apple Music 的輸出卡住了，正在重新開啟": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music's output stalled. Reopening it."
+          }
+        }
+      }
+    },
+    "Apple Music 精選": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Curated by Apple Music"
+          }
+        }
+      }
+    },
+    "Apple Music 輸出到虛擬裝置，由本 App 獨佔 DAC 原樣轉送，取樣率跟著每首歌切換。Music 停止 10 分鐘後交還 DAC。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music plays into a virtual device and this app takes exclusive access to the DAC to pass the samples on unchanged, switching the sample rate for each song. The DAC is released after Music has been stopped for 10 minutes."
+          }
+        }
+      }
+    },
+    "Apple Music 音量": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music Volume"
+          }
+        }
+      }
+    },
+    "Bit-Perfect 獨佔輸出": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bit-Perfect Exclusive Output"
+          }
+        }
+      }
+    },
+    "CD 規格以下": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CD Quality or Lower"
+          }
+        }
+      }
+    },
+    "Core Audio 錯誤：%@（%@）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Core Audio error: %1$@ (%2$@)"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Core Audio 錯誤：%1$@（%2$@）"
+          }
+        }
+      }
+    },
+    "DAC 不支援 %@，已拒絕播放（不做重取樣）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The DAC doesn't support %@. Playback was refused (no resampling)."
+          }
+        }
+      }
+    },
+    "DAC 取樣率遭到外部更動": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The DAC sample rate was changed by something else"
+          }
+        }
+      }
+    },
+    "DAC 已中斷連線": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The DAC was disconnected"
+          }
+        }
+      }
+    },
+    "DAC 格式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DAC"
+          }
+        }
+      }
+    },
+    "DAC 正被其他程式獨佔（PID %@）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The DAC is held exclusively by another app (PID %@)"
+          }
+        }
+      }
+    },
+    "DAC 音量": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DAC Volume"
+          }
+        }
+      }
+    },
+    "DAC 音量未達 100%": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DAC Volume Below 100%"
+          }
+        }
+      }
+    },
+    "Float32": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Float32"
+          }
+        }
+      }
+    },
+    "Hi-Res": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hi-Res"
+          }
+        }
+      }
+    },
+    "Hi-Res %lld 首，CD 規格以下 %lld 首": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hi-Res: %1$lld, CD quality or lower: %2$lld"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Hi-Res %1$lld 首，CD 規格以下 %2$lld 首"
+          }
+        }
+      }
+    },
+    "Hog 模式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hog mode"
+          }
+        }
+      }
+    },
+    "Hog 橋接 · %lld-bit 格點 · 相位 %lld 樣本": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hog bridge · %1$lld-bit grid · phase %2$lld samples"
+          }
+        }
+      }
+    },
+    "LosslessCompanion": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LosslessCompanion"
+          }
+        }
+      }
+    },
+    "LosslessCompanion %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LosslessCompanion %@"
+          }
+        }
+      }
+    },
+    "LosslessCompanion 標誌": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LosslessCompanion Logo"
+          }
+        }
+      }
+    },
+    "LosslessCompanion 標誌，Powered by 三彈瓦斯 and Claude": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LosslessCompanion logo, Powered by 三彈瓦斯 and Claude"
+          }
+        }
+      }
+    },
+    "LosslessSwitcher 正在執行，串流的取樣率切換交給它處理。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LosslessSwitcher is running, so it handles sample rate switching for streaming."
+          }
+        }
+      }
+    },
+    "export.save": {
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "輸出"
+          }
+        }
+      }
+    },
+    "field.album": {
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Album"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "專輯"
+          }
+        }
+      }
+    },
+    "field.artist": {
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artist"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "歌手"
+          }
+        }
+      }
+    },
+    "field.composer": {
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Composer"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "作曲者"
+          }
+        }
+      }
+    },
+    "field.genre": {
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genre"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "類型"
+          }
+        }
+      }
+    },
+    "field.song": {
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Title"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "歌曲"
+          }
+        }
+      }
+    },
+    "macOS 音量滑桿控制的是 DAC 自己的音量，不是 100% 時 DAC 可能會縮放數位訊號。開啟後本地與 Apple Music 播放時都拉到最大，停止時還原；串流的大小聲用播放列的滑桿調整。DAC 直接推耳機或主動喇叭時聲音會突然變大，請先確認後級音量。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The macOS volume slider controls the DAC's own volume. Below 100%, the DAC may scale the digital signal. When this is on, the volume goes to maximum during local and Apple Music playback and is restored when playback stops. Use the slider in the playback bar to adjust streaming loudness. If the DAC drives headphones or active speakers directly, the sound can suddenly get louder, so check your downstream volume first."
+          }
+        }
+      }
+    },
+    "powered by Claude and 三彈瓦斯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "powered by Claude and 三彈瓦斯"
+          }
+        }
+      }
+    },
+    "section.playback": {
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Playback"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "播放"
+          }
+        }
+      }
+    },
+    "·": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "·"
+          }
+        }
+      }
+    },
+    "、": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ", "
+          }
+        }
+      }
+    },
+    "。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "."
+          }
+        }
+      }
+    },
+    "。音訊內容不變，可以復原。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ". Audio content stays the same, and this can be undone."
+          }
+        }
+      }
+    },
+    "「%@」已經不在當時的位置，無法復原": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” is no longer where it was, so this can't be undone"
+          }
+        }
+      }
+    },
+    "「%@」已經存在，不會覆蓋": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” already exists and won't be overwritten"
+          }
+        }
+      }
+    },
+    "一次連結 %lld 首？": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link %#@arg1@ at Once?"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Track"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Tracks"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "一致": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same"
+          }
+        }
+      }
+    },
+    "上一首": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Previous"
+          }
+        }
+      }
+    },
+    "上一首結尾少 %lld ms": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Previous track ended %lld ms short"
+          }
+        }
+      }
+    },
+    "上次同步 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last synced %@"
+          }
+        }
+      }
+    },
+    "下一首": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next"
+          }
+        }
+      }
+    },
+    "下一首播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play Next"
+          }
+        }
+      }
+    },
+    "不一致": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Different"
+          }
+        }
+      }
+    },
+    "不支援 %lld-bit 音檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld-bit audio files aren't supported"
+          }
+        }
+      }
+    },
+    "不是可直通的無損 PCM 格式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not a lossless PCM format that can be passed through"
+          }
+        }
+      }
+    },
+    "中斷": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dropouts"
+          }
+        }
+      }
+    },
+    "串流": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stream"
+          }
+        }
+      }
+    },
+    "串流經過處理": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stream is processed"
+          }
+        }
+      }
+    },
+    "以 Apple Music 播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play with Apple Music"
+          }
+        }
+      }
+    },
+    "以本地獨佔播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play Locally in Exclusive Mode"
+          }
+        }
+      }
+    },
+    "位元深度": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bit Depth"
+          }
+        }
+      }
+    },
+    "作曲者": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Composers"
+          }
+        }
+      }
+    },
+    "你的 Apple Music 播放列表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your Apple Music Playlists"
+          }
+        }
+      }
+    },
+    "使用中：%@（%@）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In use: %1$@ (%2$@)"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "使用中：%1$@（%2$@）"
+          }
+        }
+      }
+    },
+    "依%@排序": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sort by %@"
+          }
+        }
+      }
+    },
+    "依規格篩選": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filter by Format"
+          }
+        }
+      }
+    },
+    "保留原檔名": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Original File Name"
+          }
+        }
+      }
+    },
+    "停止": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop"
+          }
+        }
+      }
+    },
+    "停止並交還 DAC": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop and Release the DAC"
+          }
+        }
+      }
+    },
+    "僅支援單一輸出串流": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "only a single output stream is supported"
+          }
+        }
+      }
+    },
+    "僅本地": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Only"
+          }
+        }
+      }
+    },
+    "僅本地，不再提示": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Only, Don't Ask Again"
+          }
+        }
+      }
+    },
+    "儲存": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
+          }
+        }
+      }
+    },
+    "內建": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Built-in"
+          }
+        }
+      }
+    },
+    "全部": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All"
+          }
+        }
+      }
+    },
+    "全部交給 Apple Music 串流，不使用獨佔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stream everything with Apple Music, without exclusive output"
+          }
+        }
+      }
+    },
+    "全部專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All Albums"
+          }
+        }
+      }
+    },
+    "全部曲目": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All Tracks"
+          }
+        }
+      }
+    },
+    "全部標記為僅本地": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mark All as Local Only"
+          }
+        }
+      }
+    },
+    "全部規格": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All Formats"
+          }
+        }
+      }
+    },
+    "全部連結": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link All"
+          }
+        }
+      }
+    },
+    "全部關閉": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All off"
+          }
+        }
+      }
+    },
+    "其中 %lld 首在其他專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld on other albums"
+          }
+        }
+      }
+    },
+    "其他專輯中的歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Songs on Other Albums"
+          }
+        }
+      }
+    },
+    "切換取樣率": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "switching the sample rate"
+          }
+        }
+      }
+    },
+    "切換取樣率後等待": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wait After Sample Rate Change"
+          }
+        }
+      }
+    },
+    "前往 Apple Music 專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to Apple Music Album"
+          }
+        }
+      }
+    },
+    "前往「%@」": {
+      "extractionState": "stale",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to “%@”"
+          }
+        }
+      }
+    },
+    "前往本地專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to Local Album"
+          }
+        }
+      }
+    },
+    "前往本地音檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to Local File"
+          }
+        }
+      }
+    },
+    "前往校閱": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to Review"
+          }
+        }
+      }
+    },
+    "前往歌手 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to Artist %@"
+          }
+        }
+      }
+    },
+    "前往歌手頁面": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to Artist Page"
+          }
+        }
+      }
+    },
+    "加入": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add"
+          }
+        }
+      }
+    },
+    "加入待播清單": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add to Queue"
+          }
+        }
+      }
+    },
+    "加入日期": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date Added"
+          }
+        }
+      }
+    },
+    "加入資料夾…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Folder…"
+          }
+        }
+      }
+    },
+    "原始順序": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Original Order"
+          }
+        }
+      }
+    },
+    "取得獨佔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "taking exclusive access"
+          }
+        }
+      }
+    },
+    "取樣中斷 %lld 次": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld capture gaps"
+          }
+        }
+      }
+    },
+    "取樣率": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sample Rate"
+          }
+        }
+      }
+    },
+    "取消": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "取消合併": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Undo Merge"
+          }
+        }
+      }
+    },
+    "只播有本地檔案的歌曲，全程獨佔，同規格可無縫接續": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play only songs with local files, always exclusive, gapless between tracks of the same format"
+          }
+        }
+      }
+    },
+    "只播本地": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Only"
+          }
+        }
+      }
+    },
+    "只改變 App 裡的顯示，檔案留在原位，隨時可以取消合併。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This only changes how albums appear in the app. Files stay where they are, and you can undo the merge anytime."
+          }
+        }
+      }
+    },
+    "只有 Apple Music 串流": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music Streaming Only"
+          }
+        }
+      }
+    },
+    "只用 Apple Music": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music Only"
+          }
+        }
+      }
+    },
+    "可以用歌名或歌手搜尋，或標記為僅本地。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search by title or artist, or mark it as local only."
+          }
+        }
+      }
+    },
+    "合併 %lld 張專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merge %#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Album"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Albums"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "合併《%@》": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merge “%@”"
+          }
+        }
+      }
+    },
+    "合併專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merge Albums"
+          }
+        }
+      }
+    },
+    "合併專輯…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merge Albums…"
+          }
+        }
+      }
+    },
+    "合併後的名稱": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merged Name"
+          }
+        }
+      }
+    },
+    "合輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compilations"
+          }
+        }
+      }
+    },
+    "同時把 Apple Music 的資料寫入檔案標籤": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also write Apple Music data to file tags"
+          }
+        }
+      }
+    },
+    "同時把檔案搬到這張專輯的資料夾": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also move files into this album's folder"
+          }
+        }
+      }
+    },
+    "同步 Apple Music 資料庫後才能比對。請開啟 Apple Music。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tracks can be compared after the Apple Music library syncs. Please open Apple Music."
+          }
+        }
+      }
+    },
+    "名稱": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name"
+          }
+        }
+      }
+    },
+    "啟動輸出": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "starting output"
+          }
+        }
+      }
+    },
+    "喜好項目": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Favorite"
+          }
+        }
+      }
+    },
+    "單曲 EQ": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Track EQ"
+          }
+        }
+      }
+    },
+    "單曲音量": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Track volume"
+          }
+        }
+      }
+    },
+    "回到音樂庫": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back to Library"
+          }
+        }
+      }
+    },
+    "在 Finder 中顯示": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show in Finder"
+          }
+        }
+      }
+    },
+    "在 Finder 中顯示所有資料夾": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show All Folders in Finder"
+          }
+        }
+      }
+    },
+    "在「%@」中顯示": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show in “%@”"
+          }
+        }
+      }
+    },
+    "在播放列表中搜尋": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search Playlist"
+          }
+        }
+      }
+    },
+    "在播放列表中顯示": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show in Playlist"
+          }
+        }
+      }
+    },
+    "外觀與語言": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appearance and Language"
+          }
+        }
+      }
+    },
+    "失去 DAC 獨佔權": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lost exclusive access to the DAC"
+          }
+        }
+      }
+    },
+    "套用": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply"
+          }
+        }
+      }
+    },
+    "完成": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "完整性": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Integrity"
+          }
+        }
+      }
+    },
+    "寫入 %lld 首標籤": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write tags for %#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg track"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg tracks"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "寫入後比對不符，沒有改動": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verification failed after writing, nothing was changed"
+          }
+        }
+      }
+    },
+    "封面": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artwork"
+          }
+        }
+      }
+    },
+    "專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Albums"
+          }
+        }
+      }
+    },
+    "專輯 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Albums %@"
+          }
+        }
+      }
+    },
+    "專輯名稱": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Album Name"
+          }
+        }
+      }
+    },
+    "專輯歌手": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Album Artist"
+          }
+        }
+      }
+    },
+    "專輯相同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same album"
+          }
+        }
+      }
+    },
+    "專輯順序": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Album Order"
+          }
+        }
+      }
+    },
+    "尚未偵測": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not detected"
+          }
+        }
+      }
+    },
+    "尚未允許控制 Apple Music。請到 系統設定 › 隱私權與安全性 › 自動化 開啟。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Control of Apple Music isn't allowed yet. Turn it on in System Settings › Privacy & Security › Automation."
+          }
+        }
+      }
+    },
+    "已交還給 Apple Music": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Handed back to Apple Music"
+          }
+        }
+      }
+    },
+    "已取消": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canceled"
+          }
+        }
+      }
+    },
+    "已播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Played"
+          }
+        }
+      }
+    },
+    "已校閱": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reviewed"
+          }
+        }
+      }
+    },
+    "已略過": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bypassed"
+          }
+        }
+      }
+    },
+    "已連結到 %@ — %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Linked to %1$@ — %2$@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "已連結到 %1$@ — %2$@"
+          }
+        }
+      }
+    },
+    "已選 %lld 項規格": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@ Selected"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Format"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Formats"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "已配對": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matched"
+          }
+        }
+      }
+    },
+    "已配對曲目": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matched Tracks"
+          }
+        }
+      }
+    },
+    "年份": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Year"
+          }
+        }
+      }
+    },
+    "建立 IOProc": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "creating the IOProc"
+          }
+        }
+      }
+    },
+    "建立播放列表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create Playlist"
+          }
+        }
+      }
+    },
+    "建立資料夾播放列表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create Folder Playlist"
+          }
+        }
+      }
+    },
+    "待播清單": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queue"
+          }
+        }
+      }
+    },
+    "很可能": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Likely"
+          }
+        }
+      }
+    },
+    "從待播清單移除": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove from Queue"
+          }
+        }
+      }
+    },
+    "復原": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Undo"
+          }
+        }
+      }
+    },
+    "復原校閱": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Undo Review"
+          }
+        }
+      }
+    },
+    "手動連結": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manual Links"
+          }
+        }
+      }
+    },
+    "打開播放視窗": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Player"
+          }
+        }
+      }
+    },
+    "找不到「%@」，可能已被移走": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” can't be found. It may have been moved."
+          }
+        }
+      }
+    },
+    "找不到本地檔案": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local file not found"
+          }
+        }
+      }
+    },
+    "找不到符合的歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Matching Songs"
+          }
+        }
+      }
+    },
+    "找不到輔助程序": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Helper process not found"
+          }
+        }
+      }
+    },
+    "找不到輸出裝置": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Output device not found"
+          }
+        }
+      }
+    },
+    "找不到這張播放列表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Playlist Not Found"
+          }
+        }
+      }
+    },
+    "把資料夾加入成播放列表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Folder as Playlist"
+          }
+        }
+      }
+    },
+    "把這一頁的 %lld 張專輯打包成 ZIP": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Package %#@arg1@ on this page as a ZIP"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg album"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg albums"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "排序方式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sort By"
+          }
+        }
+      }
+    },
+    "接下來": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Up Next"
+          }
+        }
+      }
+    },
+    "控制": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controls"
+          }
+        }
+      }
+    },
+    "換個歌名或歌手試試。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try a different title or artist."
+          }
+        }
+      }
+    },
+    "搜尋": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search"
+          }
+        }
+      }
+    },
+    "搜尋 Apple Music 資料庫": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search Apple Music Library"
+          }
+        }
+      }
+    },
+    "搜尋專輯、歌手或資料夾": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search Albums, Artists, or Folders"
+          }
+        }
+      }
+    },
+    "搜尋結果": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search Results"
+          }
+        }
+      }
+    },
+    "播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play"
+          }
+        }
+      }
+    },
+    "播放 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play %@"
+          }
+        }
+      }
+    },
+    "播放中斷": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Playback interrupted"
+          }
+        }
+      }
+    },
+    "播放來源": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Playback Source"
+          }
+        }
+      }
+    },
+    "播放列表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Playlists"
+          }
+        }
+      }
+    },
+    "播放列表順序": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Playlist Order"
+          }
+        }
+      }
+    },
+    "播放時固定為 100%": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fix at 100% During Playback"
+          }
+        }
+      }
+    },
+    "播放次數": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plays"
+          }
+        }
+      }
+    },
+    "播放次數.csv": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play Counts.csv"
+          }
+        }
+      }
+    },
+    "收不到音訊，請確認錄音權限": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No audio, check recording permission"
+          }
+        }
+      }
+    },
+    "改名 %lld 個檔案": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rename %#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg file"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg files"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "改名或搬移 %lld 個檔案": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rename or move %#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg file"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg files"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "整數": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "integer"
+          }
+        }
+      }
+    },
+    "整數直通": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Integer Passthrough"
+          }
+        }
+      }
+    },
+    "整理《%@》": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Organize “%@”"
+          }
+        }
+      }
+    },
+    "整理檔案": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Organize Files"
+          }
+        }
+      }
+    },
+    "整理檔案…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Organize Files…"
+          }
+        }
+      }
+    },
+    "時長": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duration"
+          }
+        }
+      }
+    },
+    "暫停": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pause"
+          }
+        }
+      }
+    },
+    "暫停 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pause %@"
+          }
+        }
+      }
+    },
+    "曲目": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tracks"
+          }
+        }
+      }
+    },
+    "更多動作": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More Actions"
+          }
+        }
+      }
+    },
+    "更換過檔案裡的封面後使用": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use after replacing artwork in your files"
+          }
+        }
+      }
+    },
+    "最近加入": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recently Added"
+          }
+        }
+      }
+    },
+    "最近加入的本地專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recently Added Local Albums"
+          }
+        }
+      }
+    },
+    "會讀取這些資料夾與裡面所有子資料夾的音檔。不能以 Bit-Perfect 播放的檔案會隱藏。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio files in these folders and all their subfolders are read. Files that can't play Bit-Perfect are hidden."
+          }
+        }
+      }
+    },
+    "有 %lld 個檔案也在 Apple Music 資料庫裡，改名或搬移後 Music 可能會找不到它們": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@ also in the Apple Music library. Music may lose track of them after renaming or moving."
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg file is"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg files are"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "有 %lld 首歌名重複，可能是同一張專輯的另一個版本，合併後會出現兩次": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@arg1@, possibly another version of the same album, and will appear twice after merging"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg title is a duplicate"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg titles are duplicates"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "有兩個檔案都要改成「%@」": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Two files would both be renamed “%@”"
+          }
+        }
+      }
+    },
+    "有損，不檢查": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lossy, not checked"
+          }
+        }
+      }
+    },
+    "有本地檔案就走獨佔，其餘串流；來源切換時會有數秒空檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use exclusive output when a local file exists and stream the rest. Switching sources leaves a gap of a few seconds."
+          }
+        }
+      }
+    },
+    "未分類": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unclassified"
+          }
+        }
+      }
+    },
+    "未匹配專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unmatched Albums"
+          }
+        }
+      }
+    },
+    "未匹配曲目／專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unmatched Tracks and Albums"
+          }
+        }
+      }
+    },
+    "未匹配校閱": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unmatched Review"
+          }
+        }
+      }
+    },
+    "未改動 · %lld 秒": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unchanged · %lld s"
+          }
+        }
+      }
+    },
+    "未知": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown"
+          }
+        }
+      }
+    },
+    "未知歌手": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown Artist"
+          }
+        }
+      }
+    },
+    "未知裝置": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown Device"
+          }
+        }
+      }
+    },
+    "未知錯誤": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown error"
+          }
+        }
+      }
+    },
+    "未開啟": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off"
+          }
+        }
+      }
+    },
+    "末端": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last stage"
+          }
+        }
+      }
+    },
+    "本地": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local"
+          }
+        }
+      }
+    },
+    "本地 %lld / %lld 首": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local %1$lld of %2$lld"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "本地 %1$lld / %2$lld 首"
+          }
+        }
+      }
+    },
+    "本地優先": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prefer Local"
+          }
+        }
+      }
+    },
+    "本地專輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Albums"
+          }
+        }
+      }
+    },
+    "本地播放失敗，改用 Apple Music：%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local playback failed, switching to Apple Music: %@"
+          }
+        }
+      }
+    },
+    "本地檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local file"
+          }
+        }
+      }
+    },
+    "本地歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Songs"
+          }
+        }
+      }
+    },
+    "本地無損": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Lossless"
+          }
+        }
+      }
+    },
+    "本地資料夾": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Folders"
+          }
+        }
+      }
+    },
+    "本地音樂庫": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Library"
+          }
+        }
+      }
+    },
+    "本地音樂資料夾": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Music Folders"
+          }
+        }
+      }
+    },
+    "本地音檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Files"
+          }
+        }
+      }
+    },
+    "校閱": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Review"
+          }
+        }
+      }
+    },
+    "校閱 %lld 首未匹配曲目": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Review %#@arg1@"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Unmatched Track"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Unmatched Tracks"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "校閱配對…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Review Match…"
+          }
+        }
+      }
+    },
+    "標籤太大，沒有改動": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tags are too large, nothing was changed"
+          }
+        }
+      }
+    },
+    "標記為僅本地": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mark as Local Only"
+          }
+        }
+      }
+    },
+    "標題": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Title"
+          }
+        }
+      }
+    },
+    "樣本": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Samples"
+          }
+        }
+      }
+    },
+    "樣本未改動": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Samples unchanged"
+          }
+        }
+      }
+    },
+    "橋接中：%@，四捨五入到 %lld-bit。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bridging: %1$@, rounded to %2$lld-bit."
+          }
+        }
+      }
+    },
+    "橋接沒有啟動：%@。這段期間改用一般方式播放。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The bridge did not start: %@. Playing the usual way for now."
+          }
+        }
+      }
+    },
+    "檔名": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File Name"
+          }
+        }
+      }
+    },
+    "檔名不能是空白": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The file name can't be empty"
+          }
+        }
+      }
+    },
+    "檔名格式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File Name Format"
+          }
+        }
+      }
+    },
+    "檔案位置": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File Locations"
+          }
+        }
+      }
+    },
+    "檔案整理紀錄": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Organize History"
+          }
+        }
+      }
+    },
+    "檔案標籤": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File Tags"
+          }
+        }
+      }
+    },
+    "檔案結構不符合預期，沒有改動": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The file structure isn't as expected, nothing was changed"
+          }
+        }
+      }
+    },
+    "檔案類型": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File Type"
+          }
+        }
+      }
+    },
+    "檢查 Music 的輸出有沒有被改動。需要系統音訊錄音權限，只計算，不儲存音訊。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Checks whether Music's output was changed. Needs system audio recording permission. Only computes; no audio is stored."
+          }
+        }
+      }
+    },
+    "檢查中": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Checking"
+          }
+        }
+      }
+    },
+    "檢視方式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View"
+          }
+        }
+      }
+    },
+    "次數": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plays"
+          }
+        }
+      }
+    },
+    "歌名": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Title"
+          }
+        }
+      }
+    },
+    "歌名相同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same title"
+          }
+        }
+      }
+    },
+    "歌名相近": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Similar title"
+          }
+        }
+      }
+    },
+    "歌單已經使用另一份檔案。要改用這一份，請按「校閱」。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The playlist already uses another file. To use this one, choose Review."
+          }
+        }
+      }
+    },
+    "歌手": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artists"
+          }
+        }
+      }
+    },
+    "歌手 - 歌名": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artist - Title"
+          }
+        }
+      }
+    },
+    "歌手,專輯,歌名,檔案,播放次數,上次播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artist,Album,Title,File,Plays,Last Played"
+          }
+        }
+      }
+    },
+    "歌手相同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same artist"
+          }
+        }
+      }
+    },
+    "歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Songs"
+          }
+        }
+      }
+    },
+    "歌曲識別碼不正確。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The song identifier is invalid."
+          }
+        }
+      }
+    },
+    "歌曲開頭被切掉時調長。這段靜音送在音樂之前，不影響 Bit-Perfect。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Increase this if the start of songs gets cut off. This silence plays before the music and doesn't affect Bit-Perfect."
+          }
+        }
+      }
+    },
+    "正在同步 Apple Music": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Syncing Apple Music"
+          }
+        }
+      }
+    },
+    "正在掃描本地音檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanning Local Files"
+          }
+        }
+      }
+    },
+    "正在播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Now Playing"
+          }
+        }
+      }
+    },
+    "此格式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This format"
+          }
+        }
+      }
+    },
+    "此輸出裝置不適用：%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This output device can't be used: %@"
+          }
+        }
+      }
+    },
+    "母帶不同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Different master"
+          }
+        }
+      }
+    },
+    "比對中": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparing"
+          }
+        }
+      }
+    },
+    "沒有作曲者資料": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Composer Data"
+          }
+        }
+      }
+    },
+    "沒有其他聲音": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No other audio"
+          }
+        }
+      }
+    },
+    "沒有合輯": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Compilations"
+          }
+        }
+      }
+    },
+    "沒有相近的歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Similar Songs"
+          }
+        }
+      }
+    },
+    "沒有符合「%@」的檔案": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Files Match “%@”"
+          }
+        }
+      }
+    },
+    "沒有輸出串流": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "no output streams"
+          }
+        }
+      }
+    },
+    "沒有重複檔案": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Duplicate Files"
+          }
+        }
+      }
+    },
+    "沒有開始播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Playback didn't start"
+          }
+        }
+      }
+    },
+    "沒有需要改動的項目": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing to change"
+          }
+        }
+      }
+    },
+    "沒有類型資料": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Genre Data"
+          }
+        }
+      }
+    },
+    "沒有麥克風權限，請到「系統設定 › 隱私權與安全性 › 麥克風」打開 LosslessCompanion": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No microphone permission. Turn on LosslessCompanion in System Settings › Privacy & Security › Microphone"
+          }
+        }
+      }
+    },
+    "浮點": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "float"
+          }
+        }
+      }
+    },
+    "浮點 PCM 音檔無法以整數格式無損輸出": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Floating-point PCM files can't be output losslessly as integers"
+          }
+        }
+      }
+    },
+    "淡入淡出": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crossfade"
+          }
+        }
+      }
+    },
+    "深色": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dark"
+          }
+        }
+      }
+    },
+    "混音": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mixing"
+          }
+        }
+      }
+    },
+    "淺色": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Light"
+          }
+        }
+      }
+    },
+    "清除": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear"
+          }
+        }
+      }
+    },
+    "清除待播": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear Queue"
+          }
+        }
+      }
+    },
+    "清除所有手動連結與「僅本地」標記？": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear All Manual Links and Local Only Marks?"
+          }
+        }
+      }
+    },
+    "清除所有校閱…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear All Reviews…"
+          }
+        }
+      }
+    },
+    "清除接下來的 %lld 首，正在播放的歌不受影響": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear the next %#@arg1@. The current song isn't affected."
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg track"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg tracks"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "清除搜尋": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear Search"
+          }
+        }
+      }
+    },
+    "準備中": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparing"
+          }
+        }
+      }
+    },
+    "無損": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lossless"
+          }
+        }
+      }
+    },
+    "無法啟動輔助程序：%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't start the helper process: %@"
+          }
+        }
+      }
+    },
+    "無法開啟音檔（%@）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't open the audio file (%@)"
+          }
+        }
+      }
+    },
+    "無法開始播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't start playback"
+          }
+        }
+      }
+    },
+    "無處理路徑": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clean path"
+          }
+        }
+      }
+    },
+    "版本可能不同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Possibly a different version"
+          }
+        }
+      }
+    },
+    "獨佔輸出不經過軟體音量，請用 DAC 或耳擴調整": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exclusive output bypasses software volume. Adjust it on your DAC or headphone amp."
+          }
+        }
+      }
+    },
+    "獨佔輸出裝置": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exclusive Output Device"
+          }
+        }
+      }
+    },
+    "獨佔輸出，DAC 音量未達 100%": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exclusive Output, DAC Volume Below 100%"
+          }
+        }
+      }
+    },
+    "用檔案標籤組成檔名": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Build File Names from Tags"
+          }
+        }
+      }
+    },
+    "略過": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip"
+          }
+        }
+      }
+    },
+    "目前僅支援雙聲道輸出": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "only stereo output is supported"
+          }
+        }
+      }
+    },
+    "目前只支援立體聲音檔（此檔案為 %lld 聲道）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only stereo audio files are supported (this file has %lld channels)"
+          }
+        }
+      }
+    },
+    "目前對應 %@，連結後改用這個檔案": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Currently matched to %@. Linking switches to this file."
+          }
+        }
+      }
+    },
+    "目前沒有歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Songs"
+          }
+        }
+      }
+    },
+    "目前無法讀取，保留上次的索引": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can't be read right now. Keeping the last index."
+          }
+        }
+      }
+    },
+    "目的地空間不足：需要 %@，只剩 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not enough space at the destination: %1$@ needed, %2$@ available"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "目的地空間不足：需要 %1$@，只剩 %2$@"
+          }
+        }
+      }
+    },
+    "相同 %@%% · %lld 秒": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same %@%% · %lld s"
+          }
+        }
+      }
+    },
+    "碟號": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disc"
+          }
+        }
+      }
+    },
+    "移除": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove"
+          }
+        }
+      }
+    },
+    "移除播放列表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove Playlist"
+          }
+        }
+      }
+    },
+    "稍後": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Later"
+          }
+        }
+      }
+    },
+    "立即同步播放列表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sync Playlists Now"
+          }
+        }
+      }
+    },
+    "第 %lld / %lld 首": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Track %1$lld of %2$lld"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "第 %1$lld / %2$lld 首"
+          }
+        }
+      }
+    },
+    "等待取樣率生效": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "waiting for the sample rate to take effect"
+          }
+        }
+      }
+    },
+    "等待歌曲": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for track"
+          }
+        }
+      }
+    },
+    "等待輸出格式生效": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "waiting for the output format to take effect"
+          }
+        }
+      }
+    },
+    "等級": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quality"
+          }
+        }
+      }
+    },
+    "系統混音": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System Mixer"
+          }
+        }
+      }
+    },
+    "系統轉換未驗證": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System conversion unverified"
+          }
+        }
+      }
+    },
+    "系統音效": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System sounds"
+          }
+        }
+      }
+    },
+    "編碼": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Codec"
+          }
+        }
+      }
+    },
+    "繼續播放 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resume %@"
+          }
+        }
+      }
+    },
+    "群星": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Various Artists"
+          }
+        }
+      }
+    },
+    "聚集裝置": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggregate device"
+          }
+        }
+      }
+    },
+    "自動重新開啟之後還是卡住。可以再手動重開一次，Music 自己的播放佇列會被清空。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Still stalled after reopening automatically. You can reopen it manually again, but Music's own queue will be cleared."
+          }
+        }
+      }
+    },
+    "與本地檔相同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matches local file"
+          }
+        }
+      }
+    },
+    "藍牙": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bluetooth"
+          }
+        }
+      }
+    },
+    "虛擬裝置": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virtual device"
+          }
+        }
+      }
+    },
+    "裝置": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Device"
+          }
+        }
+      }
+    },
+    "裝置沒有音量控制": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Device has no volume control"
+          }
+        }
+      }
+    },
+    "規格不同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Different format"
+          }
+        }
+      }
+    },
+    "規格未知": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown Format"
+          }
+        }
+      }
+    },
+    "解碼": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decoder"
+          }
+        }
+      }
+    },
+    "解碼失敗（%@）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decoding failed (%@)"
+          }
+        }
+      }
+    },
+    "訊號路徑": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signal Path"
+          }
+        }
+      }
+    },
+    "設定": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      }
+    },
+    "設定…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings…"
+          }
+        }
+      }
+    },
+    "設定輸出格式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "setting the output format"
+          }
+        }
+      }
+    },
+    "語言": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        }
+      }
+    },
+    "請先到設定把它加入本地音樂資料夾。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add it to your local music folders in Settings first."
+          }
+        }
+      }
+    },
+    "讀取串流格式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "reading the stream format"
+          }
+        }
+      }
+    },
+    "讀取可用格式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "reading available formats"
+          }
+        }
+      }
+    },
+    "資料來源": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data Source"
+          }
+        }
+      }
+    },
+    "跟隨系統": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Match System"
+          }
+        }
+      }
+    },
+    "跟隨系統預設": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System Default"
+          }
+        }
+      }
+    },
+    "輔助程序意外結束": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The helper process quit unexpectedly"
+          }
+        }
+      }
+    },
+    "輔助程序沒有回應": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The helper process isn't responding"
+          }
+        }
+      }
+    },
+    "輸出": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Output"
+          }
+        }
+      }
+    },
+    "輸出打包": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export"
+          }
+        }
+      }
+    },
+    "輸出打包 %lld 張專輯…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export %#@arg1@…"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Album"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Albums"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "輸出打包…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export…"
+          }
+        }
+      }
+    },
+    "返回": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back"
+          }
+        }
+      }
+    },
+    "這些曲目會回到未匹配清單。音檔與 Apple Music 資料庫都不受影響。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These tracks return to the unmatched list. Audio files and the Apple Music library aren't affected."
+          }
+        }
+      }
+    },
+    "這些曲目的歌名、歌手、專輯與長度都和 Apple Music 的歌曲相符。之後可以在「已校閱」逐一復原。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The title, artist, album, and length of these tracks all match Apple Music songs. You can undo them one by one in Reviewed later."
+          }
+        }
+      }
+    },
+    "這些檔案在目前的佇列裡，請先停止播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These files are in the current queue. Stop playback first."
+          }
+        }
+      }
+    },
+    "這個資料夾不在音樂庫裡": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Folder Isn't in Your Library"
+          }
+        }
+      }
+    },
+    "這個資料夾目前沒有可播放的音檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Folder Has No Playable Audio Files"
+          }
+        }
+      }
+    },
+    "這種格式不能寫入標籤": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tags can't be written to this format"
+          }
+        }
+      }
+    },
+    "這首歌沒有對應的 Apple Music 項目": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This song has no matching Apple Music item"
+          }
+        }
+      }
+    },
+    "這首歌目前無法播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Song Can't Be Played Right Now"
+          }
+        }
+      }
+    },
+    "連結": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link"
+          }
+        }
+      }
+    },
+    "連結全部相符（%lld 首）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link All Matches (%#@arg1@)"
+          },
+          "substitutions": {
+            "arg1": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg track"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg tracks"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "連結到 %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link to %@"
+          }
+        }
+      }
+    },
+    "遞增": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ascending"
+          }
+        }
+      }
+    },
+    "遞減": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descending"
+          }
+        }
+      }
+    },
+    "選擇位置並開始": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose Location and Start"
+          }
+        }
+      }
+    },
+    "選擇要加入音樂庫的資料夾": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose folders to add to your library"
+          }
+        }
+      }
+    },
+    "選擇音樂庫裡的資料夾": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a folder in your library"
+          }
+        }
+      }
+    },
+    "還沒有同步 Apple Music 資料庫": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music Library Not Synced Yet"
+          }
+        }
+      }
+    },
+    "還沒有整理過檔案": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Files Organized Yet"
+          }
+        }
+      }
+    },
+    "還沒有校閱過的曲目": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Reviewed Tracks Yet"
+          }
+        }
+      }
+    },
+    "配色": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appearance"
+          }
+        }
+      }
+    },
+    "重播": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Replay"
+          }
+        }
+      }
+    },
+    "重新命名…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rename…"
+          }
+        }
+      }
+    },
+    "重新命名播放列表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rename Playlist"
+          }
+        }
+      }
+    },
+    "重新掃描": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rescan"
+          }
+        }
+      }
+    },
+    "重新讀取所有封面": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reload All Artwork"
+          }
+        }
+      }
+    },
+    "重新開啟": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relaunch"
+          }
+        }
+      }
+    },
+    "重新開啟 App 後才會換成新的語言，目前的播放會停止。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The new language applies after the app relaunches. Current playback will stop."
+          }
+        }
+      }
+    },
+    "重新開啟 Apple Music": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reopen Apple Music"
+          }
+        }
+      }
+    },
+    "重複播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repeat"
+          }
+        }
+      }
+    },
+    "重複檔案": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duplicate Files"
+          }
+        }
+      }
+    },
+    "長度差 %lld 秒": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Length differs by %lld sec"
+          }
+        }
+      }
+    },
+    "長度相同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same length"
+          }
+        }
+      }
+    },
+    "開啟時，Apple Music 播放串流仍會自動切換 DAC 取樣率。關閉後，關掉視窗就會結束 App。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When on, the DAC sample rate still switches automatically while Apple Music streams. When off, closing the window quits the app."
+          }
+        }
+      }
+    },
+    "開始校閱": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start Review"
+          }
+        }
+      }
+    },
+    "開頭少 %lld ms": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start short by %lld ms"
+          }
+        }
+      }
+    },
+    "開頭是 AAC": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Started as AAC"
+          }
+        }
+      }
+    },
+    "關於": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About"
+          }
+        }
+      }
+    },
+    "關閉": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        }
+      }
+    },
+    "關閉提示": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dismiss"
+          }
+        }
+      }
+    },
+    "關閉播放視窗": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close Player"
+          }
+        }
+      }
+    },
+    "關閉視窗後繼續在背景執行": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Running in the Background After Closing the Window"
+          }
+        }
+      }
+    },
+    "隨機播放": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shuffle"
+          }
+        }
+      }
+    },
+    "需要先安裝 LosslessCompanion Bridge 虛擬裝置。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Install the LosslessCompanion Bridge virtual device first."
+          }
+        }
+      }
+    },
+    "非混音整數格式，直接交給驅動程式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non-mixable integer format, handed directly to the driver"
+          }
+        }
+      }
+    },
+    "音效": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Effects"
+          }
+        }
+      }
+    },
+    "音檔為 %lld-bit，超過 DAC 的 %lld-bit，無法無損輸出": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The audio file is %1$lld-bit, above the DAC's %2$lld-bit, so it can't be output losslessly"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "new",
+            "value": "音檔為 %1$lld-bit，超過 DAC 的 %2$lld-bit，無法無損輸出"
+          }
+        }
+      }
+    },
+    "音訊規格": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Format"
+          }
+        }
+      }
+    },
+    "音軌": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Track"
+          }
+        }
+      }
+    },
+    "音軌或檔名重複時會放進 Disc 2 這類子資料夾，封面圖留在原處，不會刪除任何檔案。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duplicate track numbers or file names go into subfolders like Disc 2. Cover art stays in place, and no files are deleted."
+          }
+        }
+      }
+    },
+    "音軌相同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Same track number"
+          }
+        }
+      }
+    },
+    "音量": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volume"
+          }
+        }
+      }
+    },
+    "順序": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order"
+          }
+        }
+      }
+    },
+    "預設播放來源": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Default Playback Source"
+          }
+        }
+      }
+    },
+    "類型": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genres"
+          }
+        }
+      }
+    },
+    "首頁": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home"
+          }
+        }
+      }
+    },
+    "驗證串流樣本": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verify stream samples"
+          }
+        }
+      }
+    },
+    "，": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ", "
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

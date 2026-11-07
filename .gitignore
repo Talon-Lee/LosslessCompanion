@@ -1,0 +1,20 @@
+# Build products
+dist/
+build/
+Driver/build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+
+# Compiled measurement tools (build them from the .swift sources)
+Tools/bridge
+Tools/clocklock
+Tools/compare
+Tools/drift
+Tools/feed
+Tools/setrate
+Driver/probe
+
+# Old preview images, replaced by docs/images
+/preview-*.png

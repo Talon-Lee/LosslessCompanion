@@ -1,0 +1,40 @@
+{
+  "sourceLanguage": "zh-Hant",
+  "strings": {
+    "NSAppleEventsUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LosslessCompanion needs to read your Apple Music playlists and control playback when you choose to stream."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LosslessCompanion 需要讀取 Apple Music 的播放列表，並在你選擇串流時控制播放。"
+          }
+        }
+      }
+    },
+    "NSMicrophoneUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hog mode reads Apple Music's output from the LosslessCompanion Bridge virtual device and passes it to your DAC unchanged. No microphone is used and no audio is saved."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hog 模式要從 LosslessCompanion Bridge 虛擬裝置讀取 Apple Music 的輸出，原樣轉送到 DAC。不會使用麥克風，也不儲存音訊。"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
