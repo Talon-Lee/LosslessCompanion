@@ -164,6 +164,8 @@ struct OrganizeRecord: Codable, Identifiable, Equatable {
     /// 這次操作合併的專輯與併進去的資料夾，復原時一起拆開
     var mergedAlbum: String?
     var mergedFolders: [String]?
+    /// 收件匣歸檔的紀錄；復原後檔案回到收件匣，要等使用者確認，不能又被自動歸檔
+    var fromInbox: Bool?
 
     var summary: String {
         var parts = [String]()
@@ -180,6 +182,7 @@ struct OrganizeRequest {
     var tags = [(path: String, update: TagUpdate)]()
     var mergedAlbum: String?
     var mergedFolders: [String]?
+    var fromInbox = false
 }
 
 struct OrganizeOutcome {
@@ -245,7 +248,8 @@ final class LibraryOrganizer: ObservableObject {
         }
 
         let record = OrganizeRecord(id: id, date: Date(), title: request.title, moves: plan.moves, tags: points,
-                                    mergedAlbum: request.mergedAlbum, mergedFolders: request.mergedFolders)
+                                    mergedAlbum: request.mergedAlbum, mergedFolders: request.mergedFolders,
+                                    fromInbox: request.fromInbox ? true : nil)
         return OrganizeOutcome(record: record, failures: failures)
     }
 

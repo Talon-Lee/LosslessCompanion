@@ -40,6 +40,7 @@ struct CompanionApp: App {
                 .environmentObject(model.review)
                 .environmentObject(model.playCounts)
                 .environmentObject(model.organizer)
+                .environmentObject(model.inbox)
                 .environmentObject(model.folderPlaylists)
                 .tint(Theme.accent)
                 // 全螢幕時工具列是獨立的不透明視窗，會蓋住貼齊頂端的播放列，要等游標移到頂端才出現

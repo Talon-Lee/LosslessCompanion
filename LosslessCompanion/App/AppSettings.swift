@@ -71,6 +71,7 @@ final class AppSettings: ObservableObject {
         static let outputOptions = "outputOptions"
         static let verifiesStreamSamples = "verifiesStreamSamples"
         static let usesHogBridge = "usesHogBridge"
+        static let processesInbox = "processesInbox"
     }
 
     private let defaults = UserDefaults.standard
@@ -129,6 +130,11 @@ final class AppSettings: ObservableObject {
         didSet { defaults.set(usesHogBridge, forKey: Key.usesHogBridge) }
     }
 
+    /// 收件匣：放進去的歌自動轉成 FLAC、依 Apple Music 補標籤並分類
+    @Published var processesInbox: Bool {
+        didSet { defaults.set(processesInbox, forKey: Key.processesInbox) }
+    }
+
     /// 以裝置 UID 為索引，每台 DAC 的鎖定時間不同
     @Published private var deviceOutputOptions: [String: OutputOptions] {
         didSet { defaults.set(try? JSONEncoder().encode(deviceOutputOptions), forKey: Key.outputOptions) }
@@ -156,6 +162,7 @@ final class AppSettings: ObservableObject {
         keepsRunningInBackground = defaults.object(forKey: Key.keepsRunningInBackground) as? Bool ?? true
         verifiesStreamSamples = defaults.bool(forKey: Key.verifiesStreamSamples)
         usesHogBridge = defaults.object(forKey: Key.usesHogBridge) as? Bool ?? true
+        processesInbox = defaults.object(forKey: Key.processesInbox) as? Bool ?? true
         #if DEBUG
         if ProcessInfo.processInfo.environment["LC_STREAM_VERIFY"] != nil { verifiesStreamSamples = true }
         #endif

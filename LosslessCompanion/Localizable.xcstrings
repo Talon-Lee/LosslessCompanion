@@ -82,6 +82,16 @@
         }
       }
     },
+    "%@ 是有損格式，轉成 FLAC 音質也不會變好，維持原格式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ is a lossy format. Converting it to FLAC would not improve the sound, so it keeps its format"
+          }
+        }
+      }
+    },
     "%@ 的獨佔設定": {
       "localizations": {
         "en": {
@@ -932,6 +942,16 @@
         }
       }
     },
+    "Apple Music 找不到這首歌，標籤來自檔案本身": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not found on Apple Music; the tags come from the file itself"
+          }
+        }
+      }
+    },
     "Apple Music 播放列表": {
       "localizations": {
         "en": {
@@ -1008,6 +1028,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Apple Music's output stalled. Reopening it."
+          }
+        }
+      }
+    },
+    "Apple Music 目錄": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Music catalog"
           }
         }
       }
@@ -1250,6 +1280,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "LosslessSwitcher is running, so it handles sample rate switching for streaming."
+          }
+        }
+      }
+    },
+    "Music 資料庫": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Music library"
           }
         }
       }
@@ -1555,6 +1595,16 @@
         }
       }
     },
+    "不是 ALAC": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not ALAC"
+          }
+        }
+      }
+    },
     "不是可直通的無損 PCM 格式": {
       "localizations": {
         "en": {
@@ -1687,6 +1737,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Keep Original File Name"
+          }
+        }
+      }
+    },
+    "修改…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit…"
+          }
+        }
+      }
+    },
+    "修改後歸檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit and File"
           }
         }
       }
@@ -2234,6 +2304,16 @@
         }
       }
     },
+    "和收件匣裡另一首歌的目的地相同": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Has the same destination as another song in the inbox"
+          }
+        }
+      }
+    },
     "啟動輸出": {
       "localizations": {
         "en": {
@@ -2280,6 +2360,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Back to Library"
+          }
+        }
+      }
+    },
+    "在 Finder 中打開": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open in Finder"
           }
         }
       }
@@ -2536,6 +2626,16 @@
         }
       }
     },
+    "已從 ALAC 轉成 FLAC，和原檔逐樣本相同；原檔在垃圾桶": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Converted from ALAC to FLAC, sample-for-sample identical to the original; the original is in the Trash"
+          }
+        }
+      }
+    },
     "已播放": {
       "localizations": {
         "en": {
@@ -2704,6 +2804,16 @@
         }
       }
     },
+    "從整理紀錄復原回來的，確認後才會歸檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restored from Organize History; it will be filed after you confirm"
+          }
+        }
+      }
+    },
     "復原": {
       "localizations": {
         "en": {
@@ -2800,6 +2910,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Playlist Not Found"
+          }
+        }
+      }
+    },
+    "把歌放進 %@。ALAC 的 m4a 會轉成 FLAC，逐樣本比對一致後原檔移到垃圾桶；標籤以 Music 資料庫或 Apple Music 目錄為準；再依現有的歌手資料夾或類型放進對應的類別。有把握的直接歸檔，其餘列在這裡。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Put songs in %@. ALAC m4a files are converted to FLAC and moved to the Trash once the FLAC is verified sample for sample. Tags come from your Music library or the Apple Music catalog, and each song goes into the category of its existing artist folder or its genre. Songs that match confidently are filed right away; the rest are listed here."
           }
         }
       }
@@ -3026,6 +3146,36 @@
         }
       }
     },
+    "收件匣": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inbox"
+          }
+        }
+      }
+    },
+    "收件匣：%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inbox: %@"
+          }
+        }
+      }
+    },
+    "收件匣：%lld 首": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inbox: %lld songs"
+          }
+        }
+      }
+    },
     "改名 %lld 個檔案": {
       "localizations": {
         "en": {
@@ -3086,6 +3236,16 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "放到：%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Destination: %@"
           }
         }
       }
@@ -3216,6 +3376,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Recently Added Local Albums"
+          }
+        }
+      }
+    },
+    "最近歸檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recently Filed"
           }
         }
       }
@@ -3360,6 +3530,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Unmatched Review"
+          }
+        }
+      }
+    },
+    "未命名": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Untitled"
           }
         }
       }
@@ -3612,6 +3792,16 @@
         }
       }
     },
+    "標籤來源：%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tags from: %@"
+          }
+        }
+      }
+    },
     "標籤太大，沒有改動": {
       "localizations": {
         "en": {
@@ -3728,6 +3918,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Organize History"
+          }
+        }
+      }
+    },
+    "檔案本身的標籤": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "the file's own tags"
           }
         }
       }
@@ -3962,12 +4162,42 @@
         }
       }
     },
+    "歸檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File"
+          }
+        }
+      }
+    },
+    "歸檔中": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filing"
+          }
+        }
+      }
+    },
     "母帶不同": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Different master"
+          }
+        }
+      }
+    },
+    "比對 Apple Music": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matching with Apple Music"
           }
         }
       }
@@ -4068,6 +4298,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nothing to change"
+          }
+        }
+      }
+    },
+    "沒有需要確認的歌。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing to review."
           }
         }
       }
@@ -4254,12 +4494,42 @@
         }
       }
     },
+    "無法判斷要放在哪個類別": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not tell which category it belongs in"
+          }
+        }
+      }
+    },
     "無法啟動輔助程序：%@": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn't start the helper process: %@"
+          }
+        }
+      }
+    },
+    "無法比對轉檔結果：%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not verify the conversion: %@"
+          }
+        }
+      }
+    },
+    "無法辨識的音訊格式": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unrecognized audio format"
           }
         }
       }
@@ -4404,6 +4674,16 @@
         }
       }
     },
+    "目的地已經有同名檔案，可能是重複的歌": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A file with the same name is already there; it may be a duplicate"
+          }
+        }
+      }
+    },
     "目的地空間不足：需要 %@，只剩 %@": {
       "localizations": {
         "en": {
@@ -4436,6 +4716,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Disc"
+          }
+        }
+      }
+    },
+    "確認歸檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm and File"
           }
         }
       }
@@ -4476,6 +4766,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sync Playlists Now"
+          }
+        }
+      }
+    },
+    "立即處理": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Process Now"
           }
         }
       }
@@ -4586,6 +4886,16 @@
         }
       }
     },
+    "缺少歌名或歌手": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Missing title or artist"
+          }
+        }
+      }
+    },
     "群星": {
       "localizations": {
         "en": {
@@ -4602,6 +4912,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aggregate device"
+          }
+        }
+      }
+    },
+    "自動判斷": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatic"
+          }
+        }
+      }
+    },
+    "自動處理": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Process Automatically"
           }
         }
       }
@@ -4636,6 +4966,16 @@
         }
       }
     },
+    "處理中": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Progress"
+          }
+        }
+      }
+    },
     "虛擬裝置": {
       "localizations": {
         "en": {
@@ -4662,6 +5002,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Device has no volume control"
+          }
+        }
+      }
+    },
+    "要復原歸檔，到「設定 › 檔案整理紀錄」。復原後歌會回到收件匣，等你確認。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To undo filing, go to Settings › Organize History. Undone songs return to the inbox and wait for your review."
           }
         }
       }
@@ -4894,6 +5244,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Export…"
+          }
+        }
+      }
+    },
+    "轉出的 FLAC 和原檔不一致，已保留原檔": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The converted FLAC does not match the original, so the original was kept"
+          }
+        }
+      }
+    },
+    "轉成 FLAC": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Converting to FLAC"
+          }
+        }
+      }
+    },
+    "轉檔失敗：%@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conversion failed: %@"
           }
         }
       }
@@ -5170,6 +5550,16 @@
         }
       }
     },
+    "重新比對": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Match Again"
+          }
+        }
+      }
+    },
     "重新讀取所有封面": {
       "localizations": {
         "en": {
@@ -5360,6 +5750,16 @@
         }
       }
     },
+    "需要確認": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Needs Review"
+          }
+        }
+      }
+    },
     "非混音整數格式，直接交給驅動程式": {
       "localizations": {
         "en": {
@@ -5466,6 +5866,26 @@
         }
       }
     },
+    "類別": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Category"
+          }
+        }
+      }
+    },
+    "類別是用歌名的文字猜的": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The category was guessed from the script of the names"
+          }
+        }
+      }
+    },
     "類型": {
       "localizations": {
         "en": {
@@ -5492,6 +5912,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Verify stream samples"
+          }
+        }
+      }
+    },
+    "（請先在設定加入本地音樂資料夾）": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(add a local music folder in Settings first)"
           }
         }
       }

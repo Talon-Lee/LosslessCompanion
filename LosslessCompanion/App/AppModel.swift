@@ -72,6 +72,7 @@ final class AppModel: ObservableObject {
     let albumMerges = AlbumMergeStore()
     let organizer = LibraryOrganizer()
     let folderPlaylists = FolderPlaylistStore()
+    let inbox = InboxModel()
     let routing: OutputRouting
     private let volumeHold: StreamVolumeHold
 
@@ -171,6 +172,13 @@ final class AppModel: ObservableObject {
         player = PlaybackCoordinator(local: local, stream: stream, deviceUID: uid)
 
         player.onLocalPlayCounted = { [playCounts] track in playCounts.recordPlay(of: track.path) }
+        inbox.libraryTracks = { [library] in library.tracks }
+        inbox.musicLibrary = { [playlists] in playlists.library }
+        inbox.isMusicLibraryReady = { [playlists] in playlists.lastSynced != nil || !playlists.library.isEmpty }
+        inbox.organize = { [weak self] request, completion in
+            guard let self else { return }
+            self.organize(request, completion: completion)
+        }
         if AppRuntime.current.isLive { applyMoves(organizer.recover()) }
 
         Publishers.CombineLatest3(Publishers.CombineLatest4(library.$tracks, library.$addedAt, playlists.$playlists, playlists.$library),
@@ -198,6 +206,7 @@ final class AppModel: ObservableObject {
             self?.updateStreamVolume()
         }
         routing.startListening()
+        inbox.start()
         library.refreshIfStale()
         playlists.syncIfStale()
         musicVolume.refresh()
@@ -620,6 +629,7 @@ final class AppModel: ObservableObject {
                     self.library.markOutdated(record.tags.map(\.path))
                     if let album = record.mergedAlbum { self.albumMerges.remove(folders: record.mergedFolders ?? [], from: album) }
                     self.organizer.finish(undoing: record)
+                    if record.fromInbox == true { self.inbox.hold(record.moves.map(\.from)) }
                     if self.organizeNotice?.id == record.id { self.organizeNotice = nil }
                     self.library.rescan()
                     completion(nil)

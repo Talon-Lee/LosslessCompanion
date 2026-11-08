@@ -9,6 +9,7 @@ LosslessCompanion is a companion player for Apple Music on macOS. It puts your A
 - **Songs you have as local files** play in Bit-Perfect exclusive mode straight to your DAC, with an MD5 check after every track.
 - **Songs that only exist on Apple Music** are played by Apple Music in the background, and the DAC's sample rate follows each song automatically.
 - **Hog mode** sends Apple Music streams into the exclusively held DAC as well. In testing, a whole song came out sample-for-sample identical to the local FLAC, apart from Music's own fade-in at the start.
+- **The inbox**: drop new songs into the Inbox folder inside your music folder. ALAC is converted to FLAC, tagged from Apple Music and filed into the right category automatically.
 
 You can build and run it without a paid Apple Developer account.
 
@@ -79,7 +80,7 @@ Data is stored in `~/Library/Application Support/LosslessCompanionHog`.
 
 ### Sidebar
 
-- **Local Library**: Recently Added, Artists, Albums, Songs, Genres, Composers, Compilations, and Unmatched Tracks/Albums. Grouping matches Apple Music. Songs matched to Music use Music's metadata; the rest use file tags.
+- **Local Library**: Recently Added, Artists, Albums, Songs, Genres, Composers, Compilations, Unmatched Tracks/Albums, and Inbox. Grouping matches Apple Music. Songs matched to Music use Music's metadata; the rest use file tags.
 - **Apple Music**: the 120 most recently added albums in your Music library, plus all your playlists.
 - **Search**: looks through local files and the Music library at once, and matches both Traditional and Simplified Chinese.
 - **The + next to Local Library**: creates a folder playlist. It only remembers the folder, so its contents follow your library.
@@ -125,6 +126,18 @@ Click the format badge in the play bar:
 - **Merge Albums**: show an album split across several folders as one, or actually move the files together.
 - **Export**: zip the albums on the current page. Audio is not recompressed or converted.
 - **Undo**: the last 30 organize and merge operations can be undone from Settings › Organize History.
+
+### Inbox
+
+The app creates a folder called 收件匣 (Inbox) inside your music folder (the first local folder in Settings, `~/Documents/HI-RES` by default). Put songs or whole album folders in it and the app will:
+
+1. **Convert**: ALAC m4a files are converted with the built-in `afconvert` to FLAC at the same bit depth, carrying over tags, lyrics and artwork. The FLAC is compared with the original sample by sample, and only an exact match sends the original to the Trash. AAC is lossy, so converting it to FLAC would not improve the sound; it stays as m4a.
+2. **Tag**: it looks in your Music library first, then in Apple's public iTunes Search API (this sends the title and artist name). The title, artist and length all have to match.
+3. **File**: if the artist already has a folder, the song goes there. A new artist goes into the category for its genre, for example Anime and J-Pop into JPOP, Mandopop into CN & Indie Rock, Classical and Soundtrack into Classical & OST, and everything else into 西洋樂壇. Folders and file names follow the "Artist - Album (Year)/01 - Title" pattern.
+
+Songs that match confidently are filed straight away. Songs that Apple Music cannot find, whose category was guessed, or whose destination already has a file with the same name are listed on the Inbox page in the sidebar, where you can edit the tags and category before filing. Filing is recorded in Organize History and can be undone; undone songs return to the inbox and wait for you to confirm. The inbox is not part of the library, so songs appear in albums and songs only after they are filed.
+
+The inbox workflow is based on the music import steps of [NexTags](https://github.com/lumakes-apps/NexTags).
 
 ### Settings
 
@@ -173,7 +186,7 @@ Measured: Apple Music playing 大風吹 (ALAC 16-bit/44.1 kHz) reached the DAC s
 xcodebuild test -project LosslessCompanion.xcodeproj -scheme LosslessCompanion -destination 'platform=macOS,arch=arm64' -derivedDataPath /tmp/lc-dd
 ```
 
-There are about 400 unit tests. Every playback test uses fake transports and never touches Music or an audio device.
+There are about 430 unit tests. Every playback test uses fake transports and never touches Music or an audio device.
 
 ```
 LosslessCompanion/
@@ -213,5 +226,6 @@ This project is licensed under the [GNU General Public License v3.0](LICENSE).
 
 - [LosslessSwitcher](https://github.com/vincentneo/LosslessSwitcher) by Vincent Neo, GPL-3.0: the source of the exclusive output engine and the player card.
 - [BlackHole](https://github.com/ExistentialAudio/BlackHole) by Existential Audio, GPL-3.0: the source of the Bridge virtual device. Its original license is in `Driver/LICENSE-BlackHole`.
+- [NexTags](https://github.com/lumakes-apps/NexTags), MIT: the inbox's convert, tag and file workflow is based on its import steps.
 
 Powered by Talon and Claude.

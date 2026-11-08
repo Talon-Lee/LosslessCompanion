@@ -15,6 +15,7 @@ enum SidebarItem: Hashable {
     case composers
     case compilations
     case unmatched
+    case inbox
     case musicRecent
     case folderPlaylist(String)
     case playlist(String)
@@ -226,6 +227,7 @@ struct MainPage: View {
             case .composers: ComposersView()
             case .compilations: CompilationsView()
             case .unmatched: UnmatchedView()
+            case .inbox: InboxView()
             case .musicRecent: MusicRecentView()
             case .folderPlaylist(let id):
                 if let playlist = folderPlaylists.playlist(id: id) {
@@ -285,6 +287,7 @@ struct SidebarView: View {
     @EnvironmentObject private var folderPlaylists: FolderPlaylistStore
     @EnvironmentObject private var library: LocalLibrary
     @EnvironmentObject private var model: AppModel
+    @EnvironmentObject private var inbox: InboxModel
 
     var body: some View {
         List(selection: selectionBinding) {
@@ -310,6 +313,9 @@ struct SidebarView: View {
                     .badge(model.index.unmatchedTracks.count)
                     .lineLimit(1)
                     .tag(SidebarItem.unmatched)
+                Label("收件匣", systemImage: "tray.and.arrow.down")
+                    .badge(inbox.reviewCount)
+                    .tag(SidebarItem.inbox)
                 ForEach(folderPlaylists.playlists) { playlist in
                     Label(playlist.name, systemImage: "folder")
                         .lineLimit(1)

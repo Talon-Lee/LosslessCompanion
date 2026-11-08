@@ -80,6 +80,7 @@ enum PreviewHarness {
             .environmentObject(model.review)
             .environmentObject(model.playCounts)
             .environmentObject(model.organizer)
+            .environmentObject(model.inbox)
             .environmentObject(model.folderPlaylists)
             .tint(Theme.accent)
             .frame(width: size.width, height: size.height)
@@ -125,6 +126,9 @@ enum PreviewHarness {
         case "composers": navigation.open(.composers)
         case "compilations": navigation.open(.compilations)
         case "unmatched": navigation.open(.unmatched)
+        case "inbox":
+            model.inbox.injectPreview()
+            navigation.open(.inbox)
         case "musicrecent": navigation.open(.musicRecent)
         case "musicalbum":
             if let index = Int(argument), model.index.recentMusic.indices.contains(index) {

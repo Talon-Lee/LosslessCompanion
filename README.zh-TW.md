@@ -9,6 +9,7 @@ LosslessCompanion 是 macOS 上 Apple Music 的伴生播放器。它把你的 Ap
 - **有本地檔案的歌**：以 Bit-Perfect 獨佔模式直接送到 DAC，每首播完都比對 MD5。
 - **只有串流的歌**：交給在背景執行的 Apple Music 播放，DAC 的取樣率會自動跟著每首歌切換。
 - **Hog 模式**：Apple Music 的串流也能送進獨佔的 DAC。實測整首歌和本地 FLAC 逐樣本相同（Music 開頭的淡入除外）。
+- **收件匣**：把新歌丟進音樂資料夾裡的「收件匣」，ALAC 自動轉成 FLAC、依 Apple Music 補標籤並放進對應的類別。
 
 不需要付費的 Apple Developer 帳號，自己建置就能使用。
 
@@ -79,7 +80,7 @@ swiftc probe.swift -o probe && ./probe   # 確認裝置已載入
 
 ### 側欄
 
-- **本地音樂庫**：最近加入、歌手、專輯、歌曲、類型、作曲者、合輯，以及「未匹配曲目／專輯」。分類方式和 Apple Music 相同。有配對到 Music 的歌曲用 Music 的資料，其餘用檔案標籤。
+- **本地音樂庫**：最近加入、歌手、專輯、歌曲、類型、作曲者、合輯、「未匹配曲目／專輯」與「收件匣」。分類方式和 Apple Music 相同。有配對到 Music 的歌曲用 Music 的資料，其餘用檔案標籤。
 - **Apple Music**：Music 資料庫最近加入的 120 張專輯，以及你所有的播放列表。
 - **搜尋**：同時找本地檔案與 Apple Music 資料庫，簡繁體都能找到。
 - **側欄「本地音樂庫」旁的 +**：建立資料夾播放列表。播放列表只記住資料夾，內容會跟著音樂庫更新。
@@ -125,6 +126,18 @@ swiftc probe.swift -o probe && ./probe   # 確認裝置已載入
 - **合併專輯**：把分散在幾個資料夾的同一張專輯合併顯示，也可以選擇真的把檔案搬到一起。
 - **輸出打包**：把目前頁面的專輯打包成 ZIP，音檔不壓縮也不轉檔。
 - **復原**：整理與合併都能從「設定 › 檔案整理紀錄」復原最近 30 次。
+
+### 收件匣
+
+App 會在音樂資料夾（設定裡的第一個本地資料夾，預設 `~/Documents/HI-RES`）建立「收件匣」資料夾。把歌或整個專輯資料夾放進去，App 會依序：
+
+1. **轉檔**：ALAC 的 m4a 用 macOS 內建的 `afconvert` 轉成同樣位元深度的 FLAC，標籤、歌詞與封面一起帶過去。轉完逐樣本比對，完全一致才把原檔移到垃圾桶。AAC 是有損格式，轉成 FLAC 音質也不會變好，所以維持 m4a。
+2. **補標籤**：先找你的 Music 資料庫，找不到再查 Apple 公開的 iTunes 搜尋 API（會送出歌名與歌手名）。歌名、歌手與長度都要對得上才採用。
+3. **分類**：歌手已經有資料夾就放進去；新歌手依類型放到對應的類別，例如動畫、J-Pop 放 JPOP，華語流行放 CN & Indie Rock，古典、原聲帶放 Classical & OST，其餘放西洋樂壇。資料夾與檔名沿用「歌手 - 專輯 (年份)/01 - 歌名」的寫法。
+
+有把握的歌直接歸檔；Apple Music 找不到、類別是猜的、或目的地已經有同名檔案的歌，會列在側欄的「收件匣」頁面，可以修改標籤和類別後再歸檔。歸檔記在「檔案整理紀錄」裡，可以復原；復原後的歌回到收件匣，等你確認後才會再歸檔。收件匣不算進音樂庫，處理完才會出現在專輯與歌曲裡。
+
+收件匣的流程參考自 [NexTags](https://github.com/lumakes-apps/NexTags) 的音樂匯入步驟。
 
 ### 設定
 
@@ -173,7 +186,7 @@ DAC 的取樣率跟著每首歌切換，由系統把 Music 的浮點輸出轉成
 xcodebuild test -project LosslessCompanion.xcodeproj -scheme LosslessCompanion -destination 'platform=macOS,arch=arm64' -derivedDataPath /tmp/lc-dd
 ```
 
-單元測試約 400 項，播放流程全部使用假的傳輸層，不會碰到 Music 或音訊裝置。
+單元測試約 430 項，播放流程全部使用假的傳輸層，不會碰到 Music 或音訊裝置。
 
 ```
 LosslessCompanion/
@@ -213,5 +226,6 @@ docs/           說明文件圖片與開發紀錄
 
 - [LosslessSwitcher](https://github.com/vincentneo/LosslessSwitcher)，作者 Vincent Neo，GPL-3.0：獨佔輸出引擎與播放卡片的來源。
 - [BlackHole](https://github.com/ExistentialAudio/BlackHole)，作者 Existential Audio，GPL-3.0：Bridge 虛擬裝置的原始碼，原授權見 `Driver/LICENSE-BlackHole`。
+- [NexTags](https://github.com/lumakes-apps/NexTags)，MIT：收件匣「轉檔、補標籤、歸檔」的匯入流程參考自它。
 
 Powered by Talon and Claude.

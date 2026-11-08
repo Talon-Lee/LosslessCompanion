@@ -56,6 +56,67 @@ enum MP4Atoms {
     private static let dataPrefixLength: UInt64 = 8
 
     static func coverArt(in url: URL) -> Data? {
+        item(Array("covr".utf8), in: url)
+    }
+
+    /// ilst 裡的文字欄位，例如歌詞 ©lyr、版權 cprt
+    static func text(_ name: [UInt8], in url: URL) -> String? {
+        item(name, in: url).map { String(decoding: $0, as: UTF8.self) }.flatMap { $0.isEmpty ? nil : $0 }
+    }
+
+    static let lyricsAtom: [UInt8] = [0xA9, 0x6C, 0x79, 0x72]
+    static let copyrightAtom = Array("cprt".utf8)
+
+    /// iTunes 標籤。有些 m4a 系統讀不到標籤（kAudioFilePropertyInfoDictionary 是空的），直接讀 ilst
+    struct Tags {
+        var title = "", artist = "", albumArtist = "", album = "", genre = "", composer = "", date = ""
+        var trackNumber = 0, discNumber = 0
+        var isCompilation = false
+    }
+
+    static func tags(in url: URL) -> Tags? {
+        guard let handle = try? FileHandle(forReadingFrom: url), let end = try? handle.seekToEnd() else { return nil }
+        defer { try? handle.close() }
+        guard let moov = child("moov", of: 0..<end, in: handle),
+              let udta = child("udta", of: moov, in: handle),
+              let meta = child("meta", of: udta, in: handle),
+              let ilst = child("ilst", of: (meta.lowerBound + metaPrefixLength)..<meta.upperBound, in: handle) else { return nil }
+
+        var tags = Tags()
+        var offset = ilst.lowerBound
+        while offset + atomHeaderLength <= ilst.upperBound {
+            guard (try? handle.seek(toOffset: offset)) != nil,
+                  let header = try? handle.read(upToCount: Int(atomHeaderLength)), header.count == Int(atomHeaderLength) else { break }
+            let size = header.prefix(4).reduce(UInt64(0)) { $0 << 8 | UInt64($1) }
+            guard size >= atomHeaderLength, offset + size <= ilst.upperBound else { break }
+            let name = [UInt8](header.dropFirst(4))
+            let item = (offset + atomHeaderLength)..<(offset + size)
+            offset += size
+            guard let data = child("data", of: item, in: handle), data.upperBound > data.lowerBound + dataPrefixLength,
+                  data.upperBound - data.lowerBound < 1 << 20,
+                  (try? handle.seek(toOffset: data.lowerBound + dataPrefixLength)) != nil,
+                  let value = try? handle.read(upToCount: Int(data.upperBound - data.lowerBound - dataPrefixLength)) else { continue }
+            let text = String(decoding: value, as: UTF8.self)
+            let bytes = [UInt8](value)
+            switch name {
+            case [0xA9] + Array("nam".utf8): tags.title = text
+            case [0xA9] + Array("ART".utf8): tags.artist = text
+            case Array("aART".utf8): tags.albumArtist = text
+            case [0xA9] + Array("alb".utf8): tags.album = text
+            case [0xA9] + Array("gen".utf8): tags.genre = text
+            case [0xA9] + Array("wrt".utf8): tags.composer = text
+            case [0xA9] + Array("day".utf8): tags.date = text
+            // 前兩個位元組保留，接著是編號與總數
+            case Array("trkn".utf8): if bytes.count >= 4 { tags.trackNumber = Int(bytes[2]) << 8 | Int(bytes[3]) }
+            case Array("disk".utf8): if bytes.count >= 4 { tags.discNumber = Int(bytes[2]) << 8 | Int(bytes[3]) }
+            case Array("cpil".utf8): tags.isCompilation = bytes.first == 1
+            default: break
+            }
+        }
+        return tags
+    }
+
+    private static func item(_ name: [UInt8], in url: URL) -> Data? {
         guard let handle = try? FileHandle(forReadingFrom: url), let end = try? handle.seekToEnd() else { return nil }
         defer { try? handle.close() }
 
@@ -63,14 +124,19 @@ enum MP4Atoms {
               let udta = child("udta", of: moov, in: handle),
               let meta = child("meta", of: udta, in: handle),
               let ilst = child("ilst", of: (meta.lowerBound + metaPrefixLength)..<meta.upperBound, in: handle),
-              let covr = child("covr", of: ilst, in: handle),
-              let data = child("data", of: covr, in: handle),
+              let item = child(name, of: ilst, in: handle),
+              let data = child("data", of: item, in: handle),
               data.upperBound > data.lowerBound + dataPrefixLength,
               (try? handle.seek(toOffset: data.lowerBound + dataPrefixLength)) != nil else { return nil }
         return try? handle.read(upToCount: Int(data.upperBound - data.lowerBound - dataPrefixLength))
     }
 
     private static func child(_ name: String, of parent: Range<UInt64>, in handle: FileHandle) -> Range<UInt64>? {
+        child(Array(name.utf8), of: parent, in: handle)
+    }
+
+    /// 名稱用位元組比對：© 在檔案裡是單一位元組 0xA9，不是 UTF-8
+    private static func child(_ name: [UInt8], of parent: Range<UInt64>, in handle: FileHandle) -> Range<UInt64>? {
         var offset = parent.lowerBound
         while offset + atomHeaderLength <= parent.upperBound {
             guard (try? handle.seek(toOffset: offset)) != nil,
@@ -86,7 +152,7 @@ enum MP4Atoms {
                 size = parent.upperBound - offset
             }
             guard size >= headerLength, offset + size <= parent.upperBound else { return nil }
-            if String(decoding: header.dropFirst(4), as: UTF8.self) == name {
+            if header.dropFirst(4).elementsEqual(name) {
                 return (offset + headerLength)..<(offset + size)
             }
             offset += size

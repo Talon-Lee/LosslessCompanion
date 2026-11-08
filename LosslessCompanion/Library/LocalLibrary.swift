@@ -126,19 +126,36 @@ struct TrackTags {
 }
 
 enum TrackMetadata {
-    static let version = 3
+    static let version = 4
 
-    static func tags(for url: URL) -> TrackTags {
+    /// fillingGaps 為 false 時只回傳檔案裡真的有的標籤，不從檔名與資料夾推測
+    static func tags(for url: URL, fillingGaps: Bool = true) -> TrackTags {
         var tags = TrackTags()
-        if url.pathExtension.lowercased() == "flac" {
+        let fileExtension = url.pathExtension.lowercased()
+        if fileExtension == "flac" {
             apply(vorbisComments: FLACBlocks.read(url: url).comments, to: &tags)
         }
         else {
             apply(audioFileInfo: audioFileInfo(url: url), to: &tags)
             if let tag = AudioChunks.id3Tag(in: url) { apply(id3: ID3Tag.text(in: tag), to: &tags) }
+            if fileExtension == "m4a", let mp4 = MP4Atoms.tags(in: url) { apply(mp4: mp4, to: &tags) }
         }
-        fillGaps(in: &tags, from: url)
+        if fillingGaps { fillGaps(in: &tags, from: url) }
         return tags
+    }
+
+    /// 系統讀到的優先，只補空的欄位
+    private static func apply(mp4: MP4Atoms.Tags, to tags: inout TrackTags) {
+        if tags.title.isEmpty { tags.title = mp4.title }
+        if tags.artist.isEmpty { tags.artist = mp4.artist }
+        if tags.albumArtist.isEmpty { tags.albumArtist = mp4.albumArtist }
+        if tags.album.isEmpty { tags.album = mp4.album }
+        if tags.genre.isEmpty { tags.genre = mp4.genre }
+        if tags.composer.isEmpty { tags.composer = mp4.composer }
+        if tags.year == 0 { tags.year = leadingNumber(mp4.date) }
+        if tags.trackNumber == 0 { tags.trackNumber = mp4.trackNumber }
+        if tags.discNumber == 0 { tags.discNumber = mp4.discNumber }
+        if mp4.isCompilation { tags.isCompilation = true }
     }
 
     /// ID3 優先：WAV 同時有 LIST 區塊時，系統讀到的可能是沒有更新過的舊資料
@@ -487,6 +504,11 @@ final class LocalLibrary: ObservableObject {
                                                               includingPropertiesForKeys: keys,
                                                               options: [.skipsHiddenFiles]) else { continue }
             for case let url as URL in walker {
+                // 收件匣裡是還沒整理好的歌，歸檔後才算進資料庫
+                if walker.level == 1, url.lastPathComponent == InboxModel.folderName {
+                    walker.skipDescendants()
+                    continue
+                }
                 // 同時加入資料夾與它的子資料夾時，同一個檔案只算一次
                 guard seen.insert(url.path).inserted else { continue }
                 let fileExtension = url.pathExtension.lowercased()
