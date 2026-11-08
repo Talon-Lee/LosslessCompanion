@@ -163,6 +163,15 @@ enum MatchResolver {
             if resolution.apple[match.track.path] == nil { resolution.apple[match.track.path] = entry }
             if entry.isFavorite == true { resolution.favorites.insert(match.track.path) }
         }
+
+        // 歌名對不上時的後備：整張專輯的曲序與長度對得上，或歌名與長度都對而且兩邊都只有這一首
+        let fallback = MatchFallback(tracks: tracks, entries: entries, matcher: matcher)
+        for (entryID, track) in fallback.matches(skipping: Set(resolution.matches.keys), taken: Set(resolution.apple.keys)) {
+            guard let entry = fallback.entry(entryID) else { continue }
+            resolution.matches[entryID] = LocalMatch(track: track, confidence: .strong)
+            if resolution.apple[track.path] == nil { resolution.apple[track.path] = entry }
+            if entry.isFavorite == true { resolution.favorites.insert(track.path) }
+        }
         return resolution
     }
 
@@ -388,5 +397,133 @@ final class MatchSuggester {
         let characters = Array(text)
         guard characters.count >= 2 else { return [] }
         return Set((0..<(characters.count - 1)).map { String(characters[$0...($0 + 1)]) })
+    }
+}
+
+// MARK: - Fallback matching
+
+/// 歌名比對找不到時的兩種後備。兩種都要求很強的旁證，寧可留給使用者校閱也不要配錯
+struct MatchFallback {
+    /// 曲序對得上的歌，長度可以差這麼多（同一張專輯在不同地區的版本常差一兩秒）
+    static let alignedTolerance: TimeInterval = 2.5
+    /// 只靠歌名與長度時，長度要幾乎一樣
+    static let titleOnlyTolerance: TimeInterval = 1.0
+    static let minimumAlignedTracks = 3
+    static let alignedShare = 0.8
+    /// 太短的歌名（例如 "Go"）不夠獨特
+    static let minimumTitleLength = 4
+
+    private let tracks: [LibraryTrack]
+    private let entries: [MusicPlaylistEntry]
+    private let byID: [String: MusicPlaylistEntry]
+    private let matcher: TrackMatcher
+
+    init(tracks: [LibraryTrack], entries: [MusicPlaylistEntry], matcher: TrackMatcher) {
+        self.tracks = tracks
+        self.entries = entries
+        self.matcher = matcher
+        byID = Dictionary(entries.map { ($0.trackID, $0) }, uniquingKeysWith: { first, _ in first })
+    }
+
+    func entry(_ id: String) -> MusicPlaylistEntry? { byID[id] }
+
+    /// 回傳歌曲 ID → 本地檔案。已經配到的歌與檔案不再動
+    func matches(skipping matched: Set<String>, taken: Set<String>) -> [String: LibraryTrack] {
+        var result = alignedAlbums(skipping: matched)
+        let titled = sameTitleAndLength(skipping: matched.union(result.keys), taken: taken.union(result.values.map(\.path)))
+        result.merge(titled) { first, _ in first }
+        return result
+    }
+
+    // MARK: Whole albums
+
+    /// 同一位歌手的專輯，曲序與每首的長度都對得上，就是同一張專輯，即使歌名或專輯名稱是另一種語言
+    /// （例如 DUSTCELL 的「Honey Bee」與「蜜蜂」、「HIKARI」與「光」）
+    func alignedAlbums(skipping matched: Set<String>) -> [String: LibraryTrack] {
+        struct Album {
+            var artists = Set<String>()
+            var tracks = [String: LibraryTrack]()
+            var entries = [String: MusicPlaylistEntry]()
+        }
+        func position(_ disc: Int, _ number: Int) -> String { "\(max(disc, 1))-\(number)" }
+
+        var local = [String: Album]()
+        for track in tracks where track.trackNumber > 0 {
+            var album = local[track.folder, default: Album()]
+            album.artists.formUnion(TrackMatcher.artistSet(track.artist))
+            album.artists.formUnion(TrackMatcher.artistSet(track.albumArtist ?? ""))
+            album.tracks[position(track.discNumber, track.trackNumber)] = track
+            local[track.folder] = album
+        }
+        var apple = [String: Album]()
+        for entry in entries where entry.trackNumber > 0 && !entry.album.isEmpty {
+            let key = TrackMatcher.fold(entry.album) + "\n" + TrackMatcher.fold(entry.albumArtist.isEmpty ? entry.artist : entry.albumArtist)
+            var album = apple[key, default: Album()]
+            album.artists.formUnion(TrackMatcher.artistSet(entry.artist))
+            album.artists.formUnion(TrackMatcher.artistSet(entry.albumArtist))
+            album.entries[position(entry.discNumber, entry.trackNumber)] = entry
+            apple[key] = album
+        }
+
+        var result = [String: LibraryTrack]()
+        let appleAlbums = apple.values.filter { $0.entries.count >= Self.minimumAlignedTracks }
+        for album in local.values where album.tracks.count >= Self.minimumAlignedTracks && !album.artists.isEmpty {
+            for candidate in appleAlbums where TrackMatcher.overlaps(album.artists, candidate.artists) {
+                var pairs = [(MusicPlaylistEntry, LibraryTrack)]()
+                for (key, track) in album.tracks {
+                    guard let entry = candidate.entries[key], abs(entry.duration - track.duration) <= Self.alignedTolerance else { continue }
+                    pairs.append((entry, track))
+                }
+                let needed = max(Self.minimumAlignedTracks,
+                                 Int((Double(min(album.tracks.count, candidate.entries.count)) * Self.alignedShare).rounded(.up)))
+                guard pairs.count >= needed else { continue }
+                for (entry, track) in pairs where !matched.contains(entry.trackID) && result[entry.trackID] == nil {
+                    // 版本不同（例如一邊是 Live）時曲序剛好對上也不算
+                    guard TitleFingerprint(title: entry.title).versions == TitleFingerprint(title: track.title).versions else { continue }
+                    result[entry.trackID] = track
+                }
+            }
+        }
+        return result
+    }
+
+    // MARK: Same title and length
+
+    /// 歌手是在地化譯名、又收在不同專輯時（例如 André Rieu 與「安德烈・瑞歐」），只剩歌名與長度可比。
+    /// 只有在本地只有一個檔案、Music 裡也只有同一位演出者的這一首時才採用
+    func sameTitleAndLength(skipping matched: Set<String>, taken: Set<String>) -> [String: LibraryTrack] {
+        var byCore = [String: [(entry: MusicPlaylistEntry, fingerprint: TitleFingerprint)]]()
+        for entry in entries {
+            let fingerprint = TitleFingerprint(title: entry.title)
+            byCore[fingerprint.core, default: []].append((entry, fingerprint))
+        }
+
+        var result = [String: LibraryTrack]()
+        for (core, list) in byCore where core.count >= Self.minimumTitleLength {
+            for item in list where !matched.contains(item.entry.trackID) && item.entry.duration > 0 {
+                let locals = matcher.tracks(matching: item.fingerprint).filter { abs($0.duration - item.entry.duration) <= Self.titleOnlyTolerance }
+                guard locals.count == 1, let track = locals.first, !taken.contains(track.path) else { continue }
+                // Music 裡同名、長度相近的歌都要是同一位演出者，否則可能是另一個人的翻唱
+                let rivals = list.filter {
+                    $0.fingerprint.versions == item.fingerprint.versions && abs($0.entry.duration - track.duration) <= TrackMatcher.sameReleaseTolerance
+                }
+                let performer = TrackMatcher.artistSet(item.entry.artist)
+                guard rivals.allSatisfy({ TrackMatcher.overlaps(TrackMatcher.artistSet($0.entry.artist), performer) }) else { continue }
+                // 歌名相同、長度相同但本地是另一位歌手，而且兩邊的專輯也不同：只在兩邊的歌手名稱寫法完全不同時才接受，
+                // 名稱寫法相近卻對不上（例如不同的英文名字）代表真的是不同人
+                let localArtists = TrackMatcher.artistSet(track.artist).union(TrackMatcher.artistSet(track.albumArtist ?? ""))
+                guard localArtists.isEmpty || TrackMatcher.overlaps(localArtists, performer) || !Self.sameScript(localArtists, performer) else { continue }
+                result[item.entry.trackID] = track
+            }
+        }
+        return result
+    }
+
+    /// 兩邊的名字都是拉丁字母時，對不上就是不同的人；一邊是中文或日文的譯名時才可能是同一個人
+    private static func sameScript(_ lhs: Set<String>, _ rhs: Set<String>) -> Bool {
+        func isLatin(_ names: Set<String>) -> Bool {
+            names.allSatisfy { $0.unicodeScalars.allSatisfy { $0.isASCII } }
+        }
+        return isLatin(lhs) == isLatin(rhs)
     }
 }
